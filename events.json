@@ -1,0 +1,943 @@
+{
+ "updated": "2026-10-24",
+ "timezone": "Europe/Rome",
+ "events": [
+  {
+   "id": "edu-vibe",
+   "title": "Il vibe coding e l'informazione nell'era degli agenti intelligenti",
+   "org": "Sole 24 Ore Business School · Education Days",
+   "type": "webinar",
+   "category": "Sviluppo & ingegneria",
+   "remote": true,
+   "place": "Online, diretta streaming",
+   "cost": "free",
+   "costLabel": "Gratuito",
+   "description": "Cosa cambia quando si scrive software descrivendolo a un agente AI, e che effetti ha sul modo di produrre informazione.",
+   "sessions": [
+    {
+     "start": "2026-10-26T12:00:00+01:00",
+     "end": "2026-10-26T13:00:00+01:00"
+    }
+   ],
+   "note": "Gratuito con iscrizione dalla pagina dell'evento.",
+   "url": "https://www.24orebs.com/eventi/il-vibe-coding-e-l-informazione-nell-era-degli-agenti-intelligenti-2026-10-26"
+  },
+  {
+   "id": "edu-binomi",
+   "title": "Binomi impossibili: dove l'algoritmo incontra l'umano nelle organizzazioni",
+   "org": "Sole 24 Ore Business School · Education Days",
+   "type": "webinar",
+   "category": "Lavoro & competenze",
+   "remote": true,
+   "place": "Online, diretta streaming",
+   "cost": "free",
+   "costLabel": "Gratuito",
+   "description": "Come convivono decisioni algoritmiche e giudizio umano nei nuovi modelli organizzativi.",
+   "sessions": [
+    {
+     "start": "2026-10-26T17:00:00+01:00",
+     "end": "2026-10-26T18:00:00+01:00"
+    }
+   ],
+   "note": "Gratuito con iscrizione dalla pagina dell'evento.",
+   "url": "https://www.24orebs.com/eventi/binomi-impossibili-dove-l-algoritmo-incontra-l-umano-nella-nuova-grammatica-delle-organizzazioni-2026-10-26"
+  },
+  {
+   "id": "edu-lavoro",
+   "title": "AI e rapporto di lavoro: potere organizzativo e tutele del lavoratore",
+   "org": "Sole 24 Ore Business School · Education Days",
+   "type": "webinar",
+   "category": "Regole, etica & sicurezza",
+   "remote": true,
+   "place": "Online, diretta streaming",
+   "cost": "free",
+   "costLabel": "Gratuito",
+   "description": "Profili giuslavoristici dell'AI in azienda: controllo, organizzazione del lavoro e diritti dei dipendenti.",
+   "sessions": [
+    {
+     "start": "2026-10-27T10:00:00+01:00",
+     "end": "2026-10-27T11:00:00+01:00"
+    }
+   ],
+   "note": "Gratuito con iscrizione dalla pagina dell'evento.",
+   "url": "https://www.24orebs.com/eventi/intelligenza-artificiale-e-rapporto-di-lavoro-nuove-frontiere-del-potere-organizzativo-e-delle-tutele-del-lavoratore-2026-10-27"
+  },
+  {
+   "id": "edu-hr",
+   "title": "L'HR nell'era dell'AI: da supporto ad architetto della trasformazione",
+   "org": "Sole 24 Ore Business School · Education Days",
+   "type": "webinar",
+   "category": "Lavoro & competenze",
+   "remote": true,
+   "place": "Online, diretta streaming",
+   "cost": "free",
+   "costLabel": "Gratuito",
+   "description": "Il nuovo ruolo della funzione HR nel guidare l'adozione dell'AI in azienda.",
+   "sessions": [
+    {
+     "start": "2026-10-27T12:00:00+01:00",
+     "end": "2026-10-27T13:00:00+01:00"
+    }
+   ],
+   "note": "Gratuito con iscrizione dalla pagina dell'evento.",
+   "url": "https://www.24orebs.com/eventi/l-hr-nell-era-dell-ai-da-funzione-di-supporto-ad-architetto-della-trasformazione-2026-10-27"
+  },
+  {
+   "id": "edu-travel",
+   "title": "L'AI che cambia il travel: dall'operatività alla customer experience",
+   "org": "Sole 24 Ore Business School · Education Days",
+   "type": "webinar",
+   "category": "AI nei settori",
+   "remote": true,
+   "place": "Online, diretta streaming",
+   "cost": "free",
+   "costLabel": "Gratuito",
+   "description": "Applicazioni dell'AI nel turismo, dalla gestione operativa all'esperienza del cliente.",
+   "sessions": [
+    {
+     "start": "2026-10-27T15:00:00+01:00",
+     "end": "2026-10-27T16:00:00+01:00"
+    }
+   ],
+   "note": "Gratuito con iscrizione dalla pagina dell'evento.",
+   "url": "https://www.24orebs.com/eventi/l-ai-che-cambia-il-travel-dalla-gestione-operativa-alla-customer-experience-2026-10-27"
+  },
+  {
+   "id": "edu-recruiting",
+   "title": "AI per recruiting e formazione: strumenti e nuove competenze HR",
+   "org": "Sole 24 Ore Business School · Education Days",
+   "type": "webinar",
+   "category": "Lavoro & competenze",
+   "remote": true,
+   "place": "Online, diretta streaming",
+   "cost": "free",
+   "costLabel": "Gratuito",
+   "description": "Strumenti AI per selezione e formazione del personale e le competenze che servono a chi li usa.",
+   "sessions": [
+    {
+     "start": "2026-10-27T17:00:00+01:00",
+     "end": "2026-10-27T18:00:00+01:00"
+    }
+   ],
+   "note": "Gratuito con iscrizione dalla pagina dell'evento.",
+   "url": "https://www.24orebs.com/eventi/ai-per-recruiting-strumenti-opportunita-e-nuove-competenze-per-hr-2026-10-27"
+  },
+  {
+   "id": "edu-geo",
+   "title": "GEO, la nuova frontiera della ricerca",
+   "org": "Sole 24 Ore Business School · Education Days",
+   "type": "webinar",
+   "category": "Marketing & comunicazione",
+   "remote": true,
+   "place": "Online, diretta streaming",
+   "cost": "free",
+   "costLabel": "Gratuito",
+   "description": "Generative Engine Optimization: farsi trovare quando le risposte le danno gli assistenti AI e non più solo i motori di ricerca.",
+   "sessions": [
+    {
+     "start": "2026-10-28T10:00:00+01:00",
+     "end": "2026-10-28T10:30:00+01:00"
+    }
+   ],
+   "note": "Gratuito con iscrizione dalla pagina dell'evento.",
+   "url": "https://www.24orebs.com/eventi/geo-la-nuova-frontiera-della-ricerca-2026-10-28"
+  },
+  {
+   "id": "edu-adv",
+   "title": "AI-Driven Advertising: dalla strategia all'esecuzione",
+   "org": "Sole 24 Ore Business School · Education Days",
+   "type": "webinar",
+   "category": "Marketing & comunicazione",
+   "remote": true,
+   "place": "Online, diretta streaming",
+   "cost": "free",
+   "costLabel": "Gratuito",
+   "description": "Pianificare ed eseguire campagne pubblicitarie con strumenti AI.",
+   "sessions": [
+    {
+     "start": "2026-10-28T11:30:00+01:00",
+     "end": "2026-10-28T12:00:00+01:00"
+    }
+   ],
+   "note": "Gratuito con iscrizione dalla pagina dell'evento.",
+   "url": "https://www.24orebs.com/eventi/ai-driven-advertising-dalla-strategia-all-esecuzione-nell-era-dell-ai-2026-10-28"
+  },
+  {
+   "id": "edu-visual",
+   "title": "Fermare lo sguardo: strategia e visual design nei contenuti digitali",
+   "org": "Sole 24 Ore Business School · Education Days",
+   "type": "webinar",
+   "category": "Marketing & comunicazione",
+   "remote": true,
+   "place": "Online, diretta streaming",
+   "cost": "free",
+   "costLabel": "Gratuito",
+   "description": "Progettare contenuti visivi efficaci per i canali digitali.",
+   "sessions": [
+    {
+     "start": "2026-10-28T12:15:00+01:00",
+     "end": "2026-10-28T12:45:00+01:00"
+    }
+   ],
+   "note": "Gratuito con iscrizione dalla pagina dell'evento.",
+   "url": "https://www.24orebs.com/eventi/fermare-lo-sguardo-strategia-e-visual-design-nei-contenuti-digitali-2026-10-28"
+  },
+  {
+   "id": "edu-retail",
+   "title": "AI nel Retail & Fashion: dalle sperimentazioni ai risultati",
+   "org": "Sole 24 Ore Business School · Education Days",
+   "type": "webinar",
+   "category": "AI nei settori",
+   "remote": true,
+   "place": "Online, diretta streaming",
+   "cost": "free",
+   "costLabel": "Gratuito",
+   "description": "Casi di AI nel retail e nella moda che hanno superato la fase pilota.",
+   "sessions": [
+    {
+     "start": "2026-10-28T12:30:00+01:00",
+     "end": "2026-10-28T13:30:00+01:00"
+    }
+   ],
+   "note": "Gratuito con iscrizione dalla pagina dell'evento.",
+   "url": "https://www.24orebs.com/eventi/ai-nel-retail-fashion-dalle-sperimentazioni-ai-risultati-concreti-2026-10-28"
+  },
+  {
+   "id": "tivoli-comm",
+   "title": "Corso di AI per commercialisti",
+   "org": "ODCEC Tivoli e Velletri · Fondazione ADERC",
+   "type": "online",
+   "category": "AI nei settori",
+   "remote": true,
+   "place": "Online, piattaforma FPCU",
+   "cost": "unknown",
+   "costLabel": "Costo non indicato · per iscritti agli Ordini",
+   "description": "Percorso di alfabetizzazione AI per lo studio professionale, in diretta il mercoledì, con laboratori di rinforzo.",
+   "sessions": [
+    {
+     "start": "2026-10-28T16:00:00+01:00",
+     "end": "2026-10-28T20:00:00+01:00"
+    },
+    {
+     "start": "2026-11-04T16:00:00+01:00",
+     "end": "2026-11-04T20:00:00+01:00"
+    },
+    {
+     "start": "2026-11-11T16:00:00+01:00",
+     "end": "2026-11-11T20:00:00+01:00"
+    },
+    {
+     "start": "2026-11-18T16:00:00+01:00",
+     "end": "2026-11-18T20:00:00+01:00"
+    }
+   ],
+   "note": "Le sessioni di rinforzo durano 18:00–20:00: verifica sul programma quale tipo di incontro cade in ogni data.",
+   "url": "https://www.fpcu.it/App_Common/Files/FilesGruppi/6135/Locandina_Corso_IA_ODCEC_Tivoli.pdf"
+  },
+  {
+   "id": "edu-mkt",
+   "title": "Marketing AI: 3 domande prima di lanciare la prossima campagna",
+   "org": "Sole 24 Ore Business School · Education Days",
+   "type": "webinar",
+   "category": "Marketing & comunicazione",
+   "remote": true,
+   "place": "Online, diretta streaming",
+   "cost": "free",
+   "costLabel": "Gratuito",
+   "description": "Una checklist critica per usare l'AI nelle campagne marketing senza perdere controllo e qualità.",
+   "sessions": [
+    {
+     "start": "2026-10-28T17:00:00+01:00",
+     "end": "2026-10-28T18:00:00+01:00"
+    }
+   ],
+   "note": "Gratuito con iscrizione dalla pagina dell'evento.",
+   "url": "https://www.24orebs.com/eventi/marketing-ai-3-domande-da-farsi-prima-di-premere-invio-sulla-prossima-campagna-2026-10-28"
+  },
+  {
+   "id": "unimi-penale",
+   "title": "Corso di perfezionamento: AI, giustizia e responsabilità penale",
+   "org": "Università degli Studi di Milano · coord. Prof. G.L. Gatta",
+   "type": "online",
+   "category": "Regole, etica & sicurezza",
+   "remote": true,
+   "place": "Online",
+   "cost": "paid",
+   "costLabel": "A pagamento · quota sulla locandina",
+   "description": "Percorso universitario online fino a febbraio 2027 con attestato finale; in accreditamento presso l'Ordine degli Avvocati di Milano.",
+   "allDay": {
+    "start": "2026-10-29",
+    "end": "2027-02-25"
+   },
+   "note": "Iscrizioni chiuse il 14 ottobre. Utile da seguire per la prossima edizione.",
+   "url": "https://sistemapenale.it/it/corso-di-perfezionamento/corso-di-perfezionamento-in-intelligenza-artificiale-giustizia-e-responsabilita-penale?out=print"
+  },
+  {
+   "id": "edu-cyber",
+   "title": "CyberSecurity 4 AI e AI 4 CyberSecurity",
+   "org": "Sole 24 Ore Business School · Education Days",
+   "type": "webinar",
+   "category": "Regole, etica & sicurezza",
+   "remote": true,
+   "place": "Online, diretta streaming",
+   "cost": "free",
+   "costLabel": "Gratuito",
+   "description": "Proteggere i sistemi AI e usare l'AI per difendere l'azienda.",
+   "sessions": [
+    {
+     "start": "2026-10-29T09:00:00+01:00",
+     "end": "2026-10-29T10:00:00+01:00"
+    }
+   ],
+   "note": "Gratuito con iscrizione dalla pagina dell'evento.",
+   "url": "https://www.24orebs.com/eventi/cybersecurity-4-ai-e-ai-4-cybersecurity-2026-10-29"
+  },
+  {
+   "id": "edu-redazione",
+   "title": "Dal dato al contenuto: una redazione data & AI driven",
+   "org": "Sole 24 Ore Business School · Education Days",
+   "type": "webinar",
+   "category": "Marketing & comunicazione",
+   "remote": true,
+   "place": "Online, diretta streaming",
+   "cost": "free",
+   "costLabel": "Gratuito",
+   "description": "Come lavora una redazione giornalistica che usa dati e AI nel flusso quotidiano.",
+   "sessions": [
+    {
+     "start": "2026-10-29T12:00:00+01:00",
+     "end": "2026-10-29T13:00:00+01:00"
+    }
+   ],
+   "note": "Gratuito con iscrizione dalla pagina dell'evento.",
+   "url": "https://www.24orebs.com/eventi/dal-dato-al-contenuto-come-lavora-una-redazione-data-ai-driven-2026-10-29"
+  },
+  {
+   "id": "edu-agili",
+   "title": "Organizzazioni agili e AI: come cambia il lavoro in team",
+   "org": "Sole 24 Ore Business School · Education Days",
+   "type": "webinar",
+   "category": "Lavoro & competenze",
+   "remote": true,
+   "place": "Online",
+   "cost": "free",
+   "costLabel": "Gratuito",
+   "description": "Con Silvia Fragola, Anna Gallotti e Catherine Tanneau: cosa delegare all'AI nei team agili, quali decisioni tenere umane e come valutarne i risultati senza perdere qualità nella collaborazione.",
+   "sessions": [
+    {
+     "start": "2026-10-29T15:00:00+01:00",
+     "end": "2026-10-29T16:00:00+01:00"
+    }
+   ],
+   "url": "https://www.24orebs.com/eventi/organizzazioni-agili-e-ai-come-cambia-il-modo-di-lavorare-insieme-2026-10-29"
+  },
+  {
+   "id": "etw-disinfo",
+   "title": "AI, algoritmi e manipolazione dell'informazione",
+   "org": "eTwinning · USR Veneto",
+   "type": "webinar",
+   "category": "Scuola & società",
+   "remote": true,
+   "place": "Online",
+   "cost": "free",
+   "costLabel": "Gratuito",
+   "description": "Webinar aperto a tutti su come algoritmi e AI contribuiscono alla diffusione della disinformazione, con spunti per portare il tema in classe.",
+   "sessions": [
+    {
+     "start": "2026-10-29T16:30:00+01:00",
+     "end": "2026-10-29T17:30:00+01:00"
+    }
+   ],
+   "note": "Durata non indicata: in calendario è impostata 1 ora.",
+   "url": "https://istruzioneveneto.gov.it/20261023_43544/"
+  },
+  {
+   "id": "edu-b2b",
+   "title": "Vendere nell'era dell'AI: il processo commerciale B2B",
+   "org": "Sole 24 Ore Business School · Education Days",
+   "type": "webinar",
+   "category": "Business & strategia",
+   "remote": true,
+   "place": "Online, diretta streaming",
+   "cost": "free",
+   "costLabel": "Gratuito",
+   "description": "Cosa cambia con l'AI in ogni fase della vendita B2B, dalla prospezione alla chiusura.",
+   "sessions": [
+    {
+     "start": "2026-10-29T17:00:00+01:00",
+     "end": "2026-10-29T18:00:00+01:00"
+    }
+   ],
+   "note": "Gratuito con iscrizione dalla pagina dell'evento.",
+   "url": "https://www.24orebs.com/eventi/vendere-nell-era-dell-ai-come-cambia-ogni-fase-del-processo-commerciale-b2b-2026-10-29"
+  },
+  {
+   "id": "edu-cfo",
+   "title": "Il CFO e il commercialista aumentati: due casi di AI applicata",
+   "org": "Sole 24 Ore Business School · Education Days",
+   "type": "webinar",
+   "category": "AI nei settori",
+   "remote": true,
+   "place": "Online, diretta streaming",
+   "cost": "free",
+   "costLabel": "Gratuito",
+   "description": "Due casi concreti di AI in finanza aziendale e nello studio professionale.",
+   "sessions": [
+    {
+     "start": "2026-10-30T10:00:00+01:00",
+     "end": "2026-10-30T11:00:00+01:00"
+    }
+   ],
+   "note": "Gratuito con iscrizione dalla pagina dell'evento.",
+   "url": "https://www.24orebs.com/eventi/il-cfo-e-il-commercialista-aumentati-due-casi-di-ai-applicata-2026-10-30"
+  },
+  {
+   "id": "edu-aifirst",
+   "title": "Dal laboratorio all'adoption: come le aziende diventano AI-first",
+   "org": "Sole 24 Ore Business School · Education Days",
+   "type": "webinar",
+   "category": "Business & strategia",
+   "remote": true,
+   "place": "Online, diretta streaming",
+   "cost": "free",
+   "costLabel": "Gratuito",
+   "description": "Il passaggio dalle sperimentazioni all'adozione diffusa dell'AI in azienda.",
+   "sessions": [
+    {
+     "start": "2026-10-30T12:00:00+01:00",
+     "end": "2026-10-30T13:00:00+01:00"
+    }
+   ],
+   "note": "Gratuito con iscrizione dalla pagina dell'evento.",
+   "url": "https://www.24orebs.com/eventi/dal-laboratorio-all-adoption-come-le-aziende-diventano-ai-first-2026-10-30"
+  },
+  {
+   "id": "edu-insurance",
+   "title": "Reinventare l'Insurance con l'AI",
+   "org": "Sole 24 Ore Business School · Education Days",
+   "type": "webinar",
+   "category": "AI nei settori",
+   "remote": true,
+   "place": "Online, diretta streaming",
+   "cost": "free",
+   "costLabel": "Gratuito",
+   "description": "L'AI come leva di crescita e competitività per le assicurazioni.",
+   "sessions": [
+    {
+     "start": "2026-10-30T15:00:00+01:00",
+     "end": "2026-10-30T16:00:00+01:00"
+    }
+   ],
+   "note": "Gratuito con iscrizione dalla pagina dell'evento.",
+   "url": "https://www.24orebs.com/eventi/reinventare-l-insurance-con-l-ai-motore-di-crescita-e-competitivita-2026-10-30"
+  },
+  {
+   "id": "edu-sport",
+   "title": "AI e algoritmi nello sport management",
+   "org": "Sole 24 Ore Business School · Education Days",
+   "type": "webinar",
+   "category": "AI nei settori",
+   "remote": true,
+   "place": "Online",
+   "cost": "free",
+   "costLabel": "Gratuito",
+   "description": "Opportunità, criticità e sfide dell'uso di dati e AI nella gestione di club e organizzazioni sportive.",
+   "sessions": [
+    {
+     "start": "2026-10-30T17:00:00+01:00",
+     "end": "2026-10-30T18:00:00+01:00"
+    }
+   ],
+   "url": "https://www.24orebs.com/eventi/intelligenza-artificiale-e-algoritmi-nello-sport-management-opportunita-criticita-e-sfide-future-2026-10-28"
+  },
+  {
+   "id": "gawdat",
+   "title": "Fireside chat live con Mo Gawdat",
+   "org": "Mo Gawdat · Substack",
+   "type": "intervista",
+   "category": "Scuola & società",
+   "remote": true,
+   "place": "Substack (live video)",
+   "cost": "paid",
+   "costLabel": "Abbonamento Premium Substack",
+   "description": "Primo appuntamento mensile in diretta: un'ora di conversazione con l'ex Chief Business Officer di Google X.",
+   "allDay": {
+    "start": "2026-11-01",
+    "end": "2026-11-01"
+   },
+   "note": "Riservato agli abbonati Premium. Orario non ancora pubblicato.",
+   "url": "https://mogawdat.substack.com/p/november-fireside-chat"
+  },
+  {
+   "id": "aiexpo-bu",
+   "title": "AI Expo Europe",
+   "org": "Bucarest",
+   "type": "conf",
+   "category": "Business & strategia",
+   "remote": false,
+   "place": "Bucarest, Romania",
+   "cost": "paid",
+   "costLabel": "A pagamento",
+   "description": "Conferenza ed esposizione orientata al business per l'Europa sud-orientale.",
+   "allDay": {
+    "start": "2026-11-01",
+    "end": "2026-11-02"
+   },
+   "url": "https://neuronfeed.com/conferences?topic=AI"
+  },
+  {
+   "id": "wjax",
+   "title": "W-JAX München",
+   "org": "Monaco di Baviera",
+   "type": "conf",
+   "category": "Sviluppo & ingegneria",
+   "remote": false,
+   "place": "Monaco, Germania",
+   "cost": "paid",
+   "costLabel": "A pagamento",
+   "description": "Conferenza per sviluppatori Java ed enterprise con ampio spazio a software e AI.",
+   "allDay": {
+    "start": "2026-11-02",
+    "end": "2026-11-06"
+   },
+   "url": "https://www.unite.ai/hi/conferences/"
+  },
+  {
+   "id": "edu-datapizza",
+   "title": "Il nodo delle competenze nell'era dell'AI: il caso Datapizza",
+   "org": "Sole 24 Ore Business School · Education Days",
+   "type": "intervista",
+   "category": "Lavoro & competenze",
+   "remote": true,
+   "place": "Online",
+   "cost": "free",
+   "costLabel": "Gratuito",
+   "description": "Conversazione tra Luca Tremolada (Il Sole 24 Ore) e Giacomo Ciarlini, cofondatore di Datapizza, sulle competenze che servono oggi.",
+   "sessions": [
+    {
+     "start": "2026-11-02T12:00:00+01:00",
+     "end": "2026-11-02T13:00:00+01:00"
+    }
+   ],
+   "url": "https://www.24orebs.com/eventi/il-nodo-delle-competenze-nell-era-dell-ai-il-caso-datapizza-2026-11-02"
+  },
+  {
+   "id": "edu-processi",
+   "title": "Open lesson: AI per i processi",
+   "org": "Sole 24 Ore Business School · Education Days",
+   "type": "online",
+   "category": "Agenti & automazione",
+   "remote": true,
+   "place": "Online",
+   "cost": "free",
+   "costLabel": "Gratuito",
+   "description": "Lezione aperta gratuita che chiude il ciclo Education Days, dedicata all'uso dell'AI nei processi aziendali.",
+   "sessions": [
+    {
+     "start": "2026-11-02T16:00:00+01:00",
+     "end": "2026-11-02T17:00:00+01:00"
+    }
+   ],
+   "url": "https://www.24orebs.com/eventi/ai-per-i-processi-2026-11-02"
+  },
+  {
+   "id": "tud-italiano",
+   "title": "L'IA in italiano: testi e contesti",
+   "org": "TU Dresden · Zentrum für Italienstudien",
+   "type": "presenza",
+   "category": "Ricerca",
+   "remote": true,
+   "place": "TU Dresden, aula 149 · anche su Zoom",
+   "cost": "unknown",
+   "costLabel": "Costo non indicato",
+   "description": "Workshop su intelligenza artificiale e lingua italiana: testi, generazione e contesti d'uso.",
+   "sessions": [
+    {
+     "start": "2026-11-03T14:30:00+01:00",
+     "end": "2026-11-03T16:30:00+01:00"
+    }
+   ],
+   "note": "Per il collegamento Zoom serve registrarsi via e-mail: giulia.mantovani@tu-dresden.de",
+   "url": "https://tu-dresden.de/gsw/slk/die-fakultaet/einrichtungen/zentrum-f-italienstudien/news/index/workshop-l2019-ia-in-italiano-testi-e-contesti"
+  },
+  {
+   "id": "ft-ai",
+   "title": "FT Future of AI Summit",
+   "org": "Financial Times",
+   "type": "conf",
+   "category": "Business & strategia",
+   "remote": false,
+   "place": "Londra, Regno Unito",
+   "cost": "paid",
+   "costLabel": "A pagamento",
+   "description": "Summit del Financial Times su strategie, investimenti e adozione dell'AI nelle imprese.",
+   "allDay": {
+    "start": "2026-11-04",
+    "end": "2026-11-05"
+   },
+   "url": "https://neuronfeed.com/conferences?topic=AI"
+  },
+  {
+   "id": "t2i-preventivi",
+   "title": "Agenti AI in pratica: preventivi con revisione multi-agente",
+   "org": "t2i · PID Camera di Commercio Venezia-Rovigo",
+   "type": "webinar",
+   "category": "Agenti & automazione",
+   "remote": true,
+   "place": "Online",
+   "cost": "free",
+   "costLabel": "Gratuito",
+   "description": "Quarto incontro del ciclo gratuito sugli agenti AI: generare preventivi facendo verificare il risultato da più agenti.",
+   "sessions": [
+    {
+     "start": "2026-11-05T16:00:00+01:00",
+     "end": "2026-11-05T17:00:00+01:00"
+    }
+   ],
+   "note": "Gratuito, prenotazione obbligatoria.",
+   "url": "https://www.t2i.it/cat-ricerca-e-sviluppo/ciclo-di-webinar-dallautomazione-allintelligenza-agenti-ai-per-i-processi-aziendali-settembre-novembre-2026/"
+  },
+  {
+   "id": "websummit",
+   "title": "Web Summit 2026",
+   "org": "Lisbona",
+   "type": "conf",
+   "category": "Business & strategia",
+   "remote": false,
+   "place": "MEO Arena e FIL, Lisbona",
+   "cost": "paid",
+   "costLabel": "A pagamento",
+   "description": "La più grande conferenza tech europea, con palchi dedicati ad AI generativa, agenti, regolazione e startup.",
+   "allDay": {
+    "start": "2026-11-09",
+    "end": "2026-11-12"
+   },
+   "url": "https://www.apprendoo.com/web-summit-2026-a-lisbona/"
+  },
+  {
+   "id": "csv-volont",
+   "title": "L'AI al servizio del volontariato",
+   "org": "CSV Brindisi Lecce",
+   "type": "online",
+   "category": "AI generativa & prompt",
+   "remote": true,
+   "place": "Online su Zoom",
+   "cost": "unknown",
+   "costLabel": "Costo non indicato · per enti del Terzo Settore",
+   "description": "Quattro incontri con Michele Mangiacotti su AI generativa per comunicazione e organizzazione nel Terzo Settore: richieste efficaci, checklist, verbali e report.",
+   "sessions": [
+    {
+     "start": "2026-11-09T15:00:00+01:00",
+     "end": "2026-11-09T18:00:00+01:00"
+    },
+    {
+     "start": "2026-11-11T15:00:00+01:00",
+     "end": "2026-11-11T18:00:00+01:00"
+    },
+    {
+     "start": "2026-11-16T15:00:00+01:00",
+     "end": "2026-11-16T18:00:00+01:00"
+    },
+    {
+     "start": "2026-11-18T15:00:00+01:00",
+     "end": "2026-11-18T18:00:00+01:00"
+    }
+   ],
+   "note": "Iscrizioni entro il 9 novembre alle 10:00.",
+   "url": "https://www.csvbrindisilecce.it/2026/10/23/la-prevenzione-oncologica-della-asl-lecce-arriva-a-soleto-per-la-campagna-di-ottobre-in-rosa-copy/"
+  },
+  {
+   "id": "roma3-prompt",
+   "title": "Intelligenza artificiale e prompt engineering (3ª edizione)",
+   "org": "Università Roma Tre · Porta Futuro Lazio",
+   "type": "presenza",
+   "category": "AI generativa & prompt",
+   "remote": false,
+   "place": "Via Ostiense 133, Roma · Lab. DA1.02",
+   "cost": "unknown",
+   "costLabel": "Costo non indicato · servizio Porta Futuro Lazio",
+   "description": "Laboratorio di 5 ore con Alessandro Corona: basi dei modelli linguistici, tecniche di prompting e uso dell'AI su dati ed Excel in ambiente Copilot.",
+   "sessions": [
+    {
+     "start": "2026-11-10T09:00:00+01:00",
+     "end": "2026-11-10T14:00:00+01:00"
+    }
+   ],
+   "note": "15 posti. Si può partecipare a una sola edizione.",
+   "url": "https://www.uniroma3.it/wp-content/uploads/file_locked/2026/07/Corona_-2026.pdf"
+  },
+  {
+   "id": "fbk-capire",
+   "title": "CAPIRE · AI literacy per la Pubblica Amministrazione (2ª edizione)",
+   "org": "Fondazione Bruno Kessler",
+   "type": "online",
+   "category": "Regole, etica & sicurezza",
+   "remote": true,
+   "place": "Online (Google Meet)",
+   "cost": "free",
+   "costLabel": "Gratuito",
+   "description": "Corso base gratuito in italiano: come funziona l'AI, potenzialità e limiti, quadro dell'AI Act e workshop su casi d'uso della PA, con ricercatori FBK.",
+   "sessions": [
+    {
+     "start": "2026-11-10T14:30:00+01:00",
+     "end": "2026-11-10T15:30:00+01:00"
+    },
+    {
+     "start": "2026-11-12T14:30:00+01:00",
+     "end": "2026-11-12T15:30:00+01:00"
+    },
+    {
+     "start": "2026-11-17T14:30:00+01:00",
+     "end": "2026-11-17T15:30:00+01:00"
+    },
+    {
+     "start": "2026-11-19T14:30:00+01:00",
+     "end": "2026-11-19T15:30:00+01:00"
+    },
+    {
+     "start": "2026-11-24T14:30:00+01:00",
+     "end": "2026-11-24T15:30:00+01:00"
+    },
+    {
+     "start": "2026-11-26T14:30:00+01:00",
+     "end": "2026-11-26T15:30:00+01:00"
+    },
+    {
+     "start": "2026-12-01T14:30:00+01:00",
+     "end": "2026-12-01T15:30:00+01:00"
+    },
+    {
+     "start": "2026-12-03T14:30:00+01:00",
+     "end": "2026-12-03T15:30:00+01:00"
+    }
+   ],
+   "note": "Le lezioni non vengono registrate; l'attestato richiede almeno 6 lezioni su 8. L'edizione si assegna per sorteggio.",
+   "url": "https://www.fbk.eu/wp-content/uploads/2026/08/Locandina_CAPIRE_2026_calendario-rev.pdf"
+  },
+  {
+   "id": "siqa",
+   "title": "SIQA Summit e AI Music Awards",
+   "org": "SIQA · Los Angeles",
+   "type": "podcast",
+   "category": "AI nei settori",
+   "remote": true,
+   "place": "Los Angeles · diretta streaming globale",
+   "cost": "mixed",
+   "costLabel": "Biglietto in presenza · streaming globale",
+   "description": "Un giorno di summit su chi costruisce la musica con l'AI, poi la prima cerimonia di premi dedicata, trasmessa in streaming.",
+   "allDay": {
+    "start": "2026-11-12",
+    "end": "2026-11-13"
+   },
+   "url": "https://awards.thesiqa.com/"
+  },
+  {
+   "id": "automate-career",
+   "title": "How to Grow Your Career in Automation",
+   "org": "Association for Advancing Automation (A3)",
+   "type": "webinar",
+   "category": "Lavoro & competenze",
+   "remote": true,
+   "place": "Online (in inglese)",
+   "cost": "unknown",
+   "costLabel": "Costo non indicato",
+   "description": "Webinar su come costruire una carriera nell'automazione e nell'AI industriale, tra competenze tecniche e rete di contatti.",
+   "sessions": [
+    {
+     "start": "2026-11-12T18:00:00+01:00",
+     "end": "2026-11-12T19:00:00+01:00"
+    }
+   ],
+   "url": "https://www.automate.org/ai/webinars/upcoming-webinars"
+  },
+  {
+   "id": "trust-aiact",
+   "title": "AI Act & Privacy: il nuovo quadro europeo",
+   "org": "Trust Data Solutions",
+   "type": "webinar",
+   "category": "Regole, etica & sicurezza",
+   "remote": true,
+   "place": "Online",
+   "cost": "free",
+   "costLabel": "Gratuito",
+   "description": "Webinar breve su come AI Act e GDPR si intrecciano. Due repliche nella stessa giornata: scegline una.",
+   "sessions": [
+    {
+     "start": "2026-11-13T10:00:00+01:00",
+     "end": "2026-11-13T10:45:00+01:00"
+    },
+    {
+     "start": "2026-11-13T14:30:00+01:00",
+     "end": "2026-11-13T15:15:00+01:00"
+    }
+   ],
+   "url": "https://trustdatasolutions.it/eventi/"
+  },
+  {
+   "id": "ailive",
+   "title": "Artificial Intelligence Live!",
+   "org": "Live! 360 · Orlando",
+   "type": "conf",
+   "category": "Sviluppo & ingegneria",
+   "remote": false,
+   "place": "Orlando, Florida",
+   "cost": "paid",
+   "costLabel": "A pagamento",
+   "description": "Laboratori pratici e sessioni tecniche su ricerca vettoriale, sicurezza dei modelli, architetture ad agenti e protocolli come MCP.",
+   "allDay": {
+    "start": "2026-11-15",
+    "end": "2026-11-20"
+   },
+   "url": "https://live360events.com/events/orlando-2026/ailive.aspx"
+  },
+  {
+   "id": "ignite",
+   "title": "Microsoft Ignite 2026",
+   "org": "Microsoft · San Francisco",
+   "type": "conf",
+   "category": "Agenti & automazione",
+   "remote": true,
+   "place": "Moscone Center, San Francisco · online gratis",
+   "cost": "mixed",
+   "costLabel": "Gratis online · a pagamento in presenza",
+   "description": "Conferenza Microsoft su AI, cloud e sicurezza: Copilot, agenti, Azure. Keynote di Satya Nadella. La partecipazione virtuale è gratuita.",
+   "allDay": {
+    "start": "2026-11-17",
+    "end": "2026-11-20"
+   },
+   "url": "https://www.uctoday.com/events/microsoft-ignite-2026/"
+  },
+  {
+   "id": "saminar-doc",
+   "title": "L'AI può comprendere e classificare i tuoi documenti?",
+   "org": "Centro Software · SAMinar",
+   "type": "webinar",
+   "category": "Agenti & automazione",
+   "remote": true,
+   "place": "Online",
+   "cost": "free",
+   "costLabel": "Gratuito",
+   "description": "Webinar sull'analisi e la classificazione automatica dei documenti aziendali con l'AI. Aperto a tutti.",
+   "sessions": [
+    {
+     "start": "2026-11-19T11:00:00+01:00",
+     "end": "2026-11-19T12:00:00+01:00"
+    }
+   ],
+   "note": "Durata non indicata: in calendario è impostata 1 ora.",
+   "url": "https://www.centrosoftware.com/webinar-calendario-2026/"
+  },
+  {
+   "id": "mlcon",
+   "title": "MLCon Berlin 2026",
+   "org": "Berlino",
+   "type": "conf",
+   "category": "Sviluppo & ingegneria",
+   "remote": false,
+   "place": "Berlino, Germania",
+   "cost": "paid",
+   "costLabel": "A pagamento",
+   "description": "Conferenza su machine learning e AI generativa per sviluppatori e data scientist.",
+   "allDay": {
+    "start": "2026-11-23",
+    "end": "2026-11-27"
+   },
+   "url": "https://www.unite.ai/hi/conferences/"
+  },
+  {
+   "id": "aisummit-eu",
+   "title": "AI Summit Europe 2026",
+   "org": "Vilnius · con Big Data Conference Europe",
+   "type": "conf",
+   "category": "Sviluppo & ingegneria",
+   "remote": false,
+   "place": "Vilnius, Lituania",
+   "cost": "paid",
+   "costLabel": "A pagamento",
+   "description": "Summit sull'AI applicata, affiancato alla Big Data Conference Europe.",
+   "allDay": {
+    "start": "2026-11-24",
+    "end": "2026-11-27"
+   },
+   "url": "https://neuronfeed.com/conferences?topic=AI"
+  },
+  {
+   "id": "t2i-vocali",
+   "title": "Agenti AI in pratica: dalle note vocali alla documentazione tecnica",
+   "org": "t2i · PID Camera di Commercio Venezia-Rovigo",
+   "type": "webinar",
+   "category": "Agenti & automazione",
+   "remote": true,
+   "place": "Online",
+   "cost": "free",
+   "costLabel": "Gratuito",
+   "description": "Ultimo incontro del ciclo: trasformare note vocali in documentazione tecnica strutturata con un agente AI.",
+   "sessions": [
+    {
+     "start": "2026-11-26T16:00:00+01:00",
+     "end": "2026-11-26T17:00:00+01:00"
+    }
+   ],
+   "note": "Gratuito, prenotazione obbligatoria.",
+   "url": "https://www.t2i.it/cat-ricerca-e-sviluppo/ciclo-di-webinar-dallautomazione-allintelligenza-agenti-ai-per-i-processi-aziendali-settembre-novembre-2026/"
+  },
+  {
+   "id": "monza-comm",
+   "title": "AI per il commercialista · percorso avanzato pratico",
+   "org": "Ordine Commercialisti Monza · con Robert Braga",
+   "type": "presenza",
+   "category": "AI nei settori",
+   "remote": false,
+   "place": "Sala convegni, via Lario 15, Monza",
+   "cost": "unknown",
+   "costLabel": "Costo non indicato · info 039 2141047",
+   "description": "Incontri pratici in aula su strumenti AI per lo studio professionale; danno crediti formativi speciali.",
+   "sessions": [
+    {
+     "start": "2026-11-26T16:00:00+01:00",
+     "end": "2026-11-26T18:30:00+01:00"
+    },
+    {
+     "start": "2026-12-17T16:00:00+01:00",
+     "end": "2026-12-17T18:30:00+01:00"
+    }
+   ],
+   "note": "Presuppone familiarità con l'uso base delle piattaforme AI.",
+   "url": "https://www.fpcu.it/App_Common/Files/FilesGruppi/5977/AIbraga26.pdf"
+  },
+  {
+   "id": "reinvent",
+   "title": "AWS re:Invent 2026",
+   "org": "Amazon Web Services · Las Vegas",
+   "type": "conf",
+   "category": "Sviluppo & ingegneria",
+   "remote": false,
+   "place": "Las Vegas, Nevada",
+   "cost": "paid",
+   "costLabel": "A pagamento",
+   "description": "Conferenza annuale AWS con molte sessioni su AI, formazione e certificazioni per team cloud.",
+   "allDay": {
+    "start": "2026-11-30",
+    "end": "2026-12-04"
+   },
+   "url": "https://blog.ai4.io/?p=16828"
+  },
+  {
+   "id": "neurips",
+   "title": "NeurIPS 2026",
+   "org": "Conference on Neural Information Processing Systems",
+   "type": "conf",
+   "category": "Ricerca",
+   "remote": false,
+   "place": "Sydney, Australia",
+   "cost": "paid",
+   "costLabel": "A pagamento",
+   "description": "La principale conferenza scientifica su machine learning e reti neurali.",
+   "allDay": {
+    "start": "2026-12-06",
+    "end": "2026-12-12"
+   },
+   "url": "https://neuronfeed.com/conferences?topic=AI"
+  }
+ ]
+}

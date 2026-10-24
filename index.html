@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Palinsesto AI · Consulentia</title>
+<meta name="description" content="Webinar, corsi, conferenze e dirette sull'intelligenza artificiale, aggiornati ogni settimana. Filtra per formato e argomento e aggiungi gli eventi al tuo calendario.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Public+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: un palinsesto a giorni — filtri in testa, agenda raggruppata per data, scheda di dettaglio a comparsa */
+:root{
+  --bg:#F2F4F6; --surface:#FFFFFF; --ink:#13202B; --muted:#5B6874; --line:#DCE1E6;
+  --accent:#0E7C6B; --accent-ink:#FFFFFF; --accent-soft:#DCEFEA;
+  --live:#C2410C; --live-soft:#FDE8DC;
+  --t-webinar:#2563EB; --t-online:#0E7C6B; --t-presenza:#B45309; --t-conf:#7C3AED; --t-intervista:#DB2777; --t-podcast:#0891B2;
+  --display:"Big Shoulders Display", "Arial Narrow", sans-serif;
+  --body:"Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F161C; --surface:#17212A; --ink:#E6ECF1; --muted:#9AA7B3; --line:#26323C;
+  --accent:#34B89F; --accent-ink:#06201B; --accent-soft:#143A33; --live:#FB923C; --live-soft:#3A2214;
+  --t-webinar:#60A5FA; --t-online:#34B89F; --t-presenza:#F59E0B; --t-conf:#A78BFA; --t-intervista:#F472B6; --t-podcast:#22D3EE;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F161C; --surface:#17212A; --ink:#E6ECF1; --muted:#9AA7B3; --line:#26323C;
+  --accent:#34B89F; --accent-ink:#06201B; --accent-soft:#143A33; --live:#FB923C; --live-soft:#3A2214;
+  --t-webinar:#60A5FA; --t-online:#34B89F; --t-presenza:#F59E0B; --t-conf:#A78BFA; --t-intervista:#F472B6; --t-podcast:#22D3EE;
+  color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 64px}
+header.top{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:flex-end;justify-content:space-between;border-bottom:3px solid var(--ink);padding-bottom:14px}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(40px,7vw,68px);line-height:.9;letter-spacing:.01em;margin:0;text-transform:uppercase;text-wrap:balance}
+h1 span{color:var(--accent)}
+.meta{font-family:var(--mono);font-size:12px;color:var(--muted);display:grid;gap:2px;text-align:right}
+.meta b{color:var(--ink);font-weight:600}
+.stats{display:flex;flex-wrap:wrap;gap:8px 22px;margin:14px 0 4px;font-family:var(--mono);font-size:12.5px;color:var(--muted)}
+.stats strong{font-family:var(--display);font-size:26px;color:var(--ink);font-weight:800;margin-right:4px;vertical-align:-3px}
+
+.filters{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:14px 12px;border-bottom:1px solid var(--line);display:grid;gap:10px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.row{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.lbl{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);font-weight:700;min-width:84px}
+.chip{appearance:none;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:500 13px/1 var(--body);padding:7px 11px;border-radius:999px;cursor:pointer;display:inline-flex;gap:6px;align-items:center}
+.chip .dot{width:8px;height:8px;border-radius:50%;background:var(--c,var(--muted))}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chip:focus-visible,.btn:focus-visible,.card:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.search{flex:1 1 220px;min-width:0;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:400 14px var(--body);padding:8px 12px;border-radius:8px}
+.toggle{display:inline-flex;gap:6px;align-items:center;font-size:13px;color:var(--muted);cursor:pointer}
+.reset{background:none;border:0;color:var(--accent);font:600 13px var(--body);cursor:pointer;padding:6px}
+
+.day{display:grid;grid-template-columns:120px 1fr;gap:16px;padding-block:18px;border-bottom:1px solid var(--line)}
+.dayhead{position:relative}
+.dayhead .dn{font-family:var(--display);font-weight:800;font-size:44px;line-height:.9}
+.dayhead .dw{font-family:var(--mono);font-size:12px;text-transform:uppercase;color:var(--muted);letter-spacing:.06em}
+.dayhead .rel{display:inline-block;margin-top:6px;font:600 11px var(--mono);color:var(--accent);background:var(--accent-soft);padding:2px 6px;border-radius:4px}
+.list{display:grid;gap:8px;min-width:0}
+.card{display:grid;grid-template-columns:86px 1fr auto;gap:14px;align-items:start;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--c);border-radius:6px;padding:12px 14px;cursor:pointer;text-align:left;color:inherit;font:inherit;width:100%}
+.card:hover{border-color:var(--c)}
+.time{font-family:var(--mono);font-size:13px;font-weight:600;font-variant-numeric:tabular-nums;line-height:1.35}
+.time small{display:block;font-weight:400;color:var(--muted);font-size:11.5px}
+.body{min-width:0}
+.ttl{font-weight:700;font-size:15.5px;line-height:1.3;margin:0 0 4px;text-wrap:balance}
+.sub{font-size:13px;color:var(--muted);margin:0}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.tag{font:600 11px var(--mono);letter-spacing:.03em;padding:2px 7px;border-radius:4px;border:1px solid var(--line);color:var(--muted)}
+.tag.type{color:var(--c);border-color:currentColor}
+.tag.cost.free{color:var(--accent);background:var(--accent-soft);border-color:transparent}
+.tag.cost.unknown{border-style:dashed}
+.tag.live{color:var(--live);background:var(--live-soft);border-color:transparent}
+.add{align-self:center;font:600 12px var(--body);color:var(--accent);white-space:nowrap}
+.empty{padding:48px 0;text-align:center;color:var(--muted)}
+
+/* dettaglio */
+.scrim{position:fixed;inset:0;background:rgb(0 0 0 / .35);z-index:20}
+.panel{position:fixed;top:0;right:0;bottom:0;width:min(460px,100%);background:var(--surface);z-index:21;overflow-y:auto;border-left:1px solid var(--line);
+  padding:calc(22px + env(safe-area-inset-top,0px)) max(22px,env(safe-area-inset-right,0px)) calc(28px + env(safe-area-inset-bottom,0px)) 22px;display:grid;gap:16px;align-content:start}
+.panel .close{justify-self:end;background:none;border:1px solid var(--line);color:var(--ink);border-radius:6px;padding:6px 10px;cursor:pointer;font:600 13px var(--body)}
+.panel h2{font-family:var(--display);font-weight:800;font-size:32px;line-height:1;margin:0;text-wrap:balance}
+.facts{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:14px;margin:0}
+.facts dt{font:600 11px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);padding-top:3px}
+.facts dd{margin:0}
+.desc{margin:0;max-width:62ch}
+.note{font-size:13px;color:var(--live);background:var(--live-soft);padding:8px 10px;border-radius:6px;margin:0}
+.sessions{display:grid;gap:10px}
+.sess{border:1px solid var(--line);border-radius:8px;padding:10px 12px;display:grid;gap:8px}
+.sess .when{font:600 13px var(--mono);font-variant-numeric:tabular-nums}
+.btns{display:flex;flex-wrap:wrap;gap:6px}
+.btn{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font:600 13px var(--body);padding:8px 12px;border-radius:6px;border:1px solid var(--line);color:var(--ink);background:var(--bg);cursor:pointer}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.src{font-size:13px;color:var(--accent);word-break:break-word}
+.foot{margin-top:28px;font-size:12.5px;color:var(--muted);max-width:70ch}
+
+@media (max-width:640px){
+  .day{grid-template-columns:1fr;gap:10px}
+  .dayhead{display:flex;gap:10px;align-items:baseline}
+  .dayhead .dn{font-size:34px}
+  .card{grid-template-columns:1fr}
+  .add{justify-self:start}
+  .lbl{min-width:0;width:100%}
+  .meta{text-align:left}
+}
+@media (prefers-reduced-motion:no-preference){.panel{animation:slide .18s ease-out}@keyframes slide{from{transform:translateX(24px);opacity:.6}}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="top">
+    <h1>Palinsesto <span>AI</span></h1>
+    <div class="meta"><span>Orari in <b>ora di Roma</b></span><span>Aggiornato il <b id="updated">…</b></span></div>
+  </header>
+  <div class="stats" id="stats"></div>
+
+  <section class="filters" aria-label="Filtri">
+    <div class="row"><span class="lbl">Formato</span><div class="row" id="fType"></div></div>
+    <div class="row"><span class="lbl">Argomento</span><div class="row" id="fCat"></div></div>
+    <div class="row">
+      <input class="search" id="q" type="search" placeholder="Cerca titolo, organizzatore, città…" aria-label="Cerca">
+      <label class="toggle"><input type="checkbox" id="onlineOnly"> Solo seguibili da remoto</label>
+      <label class="toggle"><input type="checkbox" id="freeOnly"> Solo gratuiti</label>
+      <button class="reset" id="reset" type="button">Azzera filtri</button>
+    </div>
+  </section>
+
+  <main id="agenda"><p class="empty">Carico il palinsesto…</p></main>
+
+  <p class="foot">Gli eventi passati spariscono da soli. Prima di iscriverti controlla la pagina dell'organizzatore: date e orari possono cambiare. "Costo non indicato" significa che l'organizzatore non lo pubblica: chiedi prima di iscriverti. Il pulsante calendario apre Google Calendar o Outlook con l'evento già compilato, oppure scarica un file .ics per Apple Calendar e le altre app.</p>
+</div>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside class="panel" id="panel" hidden role="dialog" aria-modal="true" aria-labelledby="pTitle"></aside>
+
+<script>
+const TYPES = {
+  webinar:{label:"Webinar", c:"--t-webinar"},
+  online:{label:"Corso online", c:"--t-online"},
+  presenza:{label:"Corso in presenza", c:"--t-presenza"},
+  conf:{label:"Conferenza", c:"--t-conf"},
+  intervista:{label:"Intervista / fireside", c:"--t-intervista"},
+  podcast:{label:"Podcast / videocast live", c:"--t-podcast"}
+};
+const CAT_ORDER=["Agenti & automazione","AI generativa & prompt","Marketing & comunicazione","Regole, etica & sicurezza","Business & strategia","Sviluppo & ingegneria","Ricerca","Lavoro & competenze","Scuola & società","AI nei settori"];
+let CATS=[];let EVENTS=[];
+const TZ="Europe/Rome";
+const $=s=>document.querySelector(s);
+const state={types:new Set(),cats:new Set(),q:"",remote:false,free:false};
+try{const saved=JSON.parse(localStorage.getItem("palinsesto-filtri")||"null");if(saved){state.types=new Set(saved.types);state.cats=new Set(saved.cats);state.remote=!!saved.remote;state.free=!!saved.free}}catch(e){}
+function save(){try{localStorage.setItem("palinsesto-filtri",JSON.stringify({types:[...state.types],cats:[...state.cats],remote:state.remote,free:state.free}))}catch(e){}}
+
+const fmtDayKey=d=>new Intl.DateTimeFormat("en-CA",{timeZone:TZ,year:"numeric",month:"2-digit",day:"2-digit"}).format(d);
+const fmtTime=d=>new Intl.DateTimeFormat("it-IT",{timeZone:TZ,hour:"2-digit",minute:"2-digit"}).format(d);
+const fmtLong=d=>new Intl.DateTimeFormat("it-IT",{timeZone:TZ,weekday:"long",day:"numeric",month:"long"}).format(d);
+const fmtShort=key=>{const [y,m,dd]=key.split("-").map(Number);return new Intl.DateTimeFormat("it-IT",{day:"numeric",month:"short",timeZone:"UTC"}).format(Date.UTC(y,m-1,dd))};
+const noon=key=>new Date(key+"T12:00:00Z");
+
+function startOf(ev){return ev.allDay?noon(ev.allDay.s):new Date(ev.sessions[0].s)}
+function endOf(ev){return ev.allDay?new Date(ev.allDay.e+"T23:59:59+01:00"):new Date(ev.sessions[ev.sessions.length-1].e)}
+function nextSession(ev,now){if(ev.allDay)return null;return ev.sessions.find(x=>new Date(x.e)>now)||null}
+// chiave del giorno in cui l'evento compare: prossima sessione o, se in corso, oggi
+function anchor(ev,now){
+  if(ev.allDay){const today=fmtDayKey(now);return ev.allDay.s<today?today:ev.allDay.s}
+  return fmtDayKey(new Date(nextSession(ev,now).s));
+}
+function relLabel(key,now){
+  const today=fmtDayKey(now);const diff=Math.round((noon(key)-noon(today))/864e5);
+  if(diff===0)return"Oggi";if(diff===1)return"Domani";if(diff<7)return`Tra ${diff} giorni`;if(diff<14)return"Settimana prossima";return null;
+}
+
+// link calendario
+const z=d=>d.toISOString().replace(/[-:]/g,"").replace(/\.\d{3}/,"");
+function addDays(key,n){const d=noon(key);d.setUTCDate(d.getUTCDate()+n);return d.toISOString().slice(0,10)}
+function calLinks(ev,sess){
+  const details=`${ev.desc}\n\nOrganizzatore: ${ev.org}\nCosto: ${ev.costLabel}\nFonte: ${ev.url}`;
+  const g=new URLSearchParams({action:"TEMPLATE",text:ev.title,details,location:ev.place});
+  const o=new URLSearchParams({path:"/calendar/action/compose",rru:"addevent",subject:ev.title,body:details,location:ev.place});
+  if(ev.allDay){
+    g.set("dates",`${ev.allDay.s.replace(/-/g,"")}/${addDays(ev.allDay.e,1).replace(/-/g,"")}`);
+    o.set("startdt",ev.allDay.s);o.set("enddt",addDays(ev.allDay.e,1));o.set("allday","true");
+  }else{
+    const s=new Date(sess.s),e=new Date(sess.e);
+    g.set("dates",`${z(s)}/${z(e)}`);g.set("ctz",TZ);
+    o.set("startdt",s.toISOString());o.set("enddt",e.toISOString());o.set("allday","false");
+  }
+  return{google:"https://calendar.google.com/calendar/render?"+g.toString(),outlook:"https://outlook.live.com/calendar/0/action/compose?"+o.toString(),office:"https://outlook.office.com/calendar/0/action/compose?"+o.toString()};
+}
+
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+
+function buildChips(){
+  $("#fType").innerHTML=Object.entries(TYPES).map(([k,t])=>`<button class="chip" type="button" data-k="${k}" style="--c:var(${t.c})" aria-pressed="${state.types.has(k)}"><span class="dot"></span>${t.label}</button>`).join("");
+  $("#fCat").innerHTML=CATS.map(c=>`<button class="chip" type="button" data-k="${esc(c)}" aria-pressed="${state.cats.has(c)}">${esc(c)}</button>`).join("");
+  $("#onlineOnly").checked=state.remote;$("#freeOnly").checked=state.free;
+}
+function toggle(set,k){set.has(k)?set.delete(k):set.add(k)}
+$("#fType").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;toggle(state.types,b.dataset.k);save();buildChips();render()});
+$("#fCat").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;toggle(state.cats,b.dataset.k);save();buildChips();render()});
+$("#q").addEventListener("input",e=>{state.q=e.target.value.trim().toLowerCase();render()});
+$("#onlineOnly").addEventListener("change",e=>{state.remote=e.target.checked;save();render()});
+$("#freeOnly").addEventListener("change",e=>{state.free=e.target.checked;save();render()});
+$("#reset").addEventListener("click",()=>{state.types.clear();state.cats.clear();state.q="";state.remote=false;state.free=false;$("#q").value="";save();buildChips();render()});
+
+function visible(now){
+  return EVENTS.filter(ev=>endOf(ev)>now)
+    .filter(ev=>!state.types.size||state.types.has(ev.type))
+    .filter(ev=>!state.cats.size||state.cats.has(ev.cat))
+    .filter(ev=>!state.remote||ev.remote)
+    .filter(ev=>!state.free||ev.cost==="free")
+    .filter(ev=>!state.q||(ev.title+" "+ev.org+" "+ev.place+" "+ev.cat+" "+TYPES[ev.type].label).toLowerCase().includes(state.q));
+}
+
+function render(){
+  const now=new Date();
+  const all=EVENTS.filter(ev=>endOf(ev)>now);
+  const list=visible(now);
+  const wk=all.filter(ev=>(noon(anchor(ev,now))-noon(fmtDayKey(now)))/864e5<7).length;
+  $("#stats").innerHTML=`<span><strong>${list.length}</strong>di ${all.length} in programma</span><span><strong>${wk}</strong>nei prossimi 7 giorni</span><span><strong>${all.filter(e=>e.remote).length}</strong>seguibili da remoto</span><span><strong>${all.filter(e=>e.cost==="free").length}</strong>gratuiti</span>`;
+  const groups={};
+  list.forEach(ev=>{const k=anchor(ev,now);(groups[k]=groups[k]||[]).push(ev)});
+  const keys=Object.keys(groups).sort();
+  if(!keys.length){$("#agenda").innerHTML=`<p class="empty">Nessun contenuto con questi filtri. Prova a togliere un formato o un argomento.</p>`;return}
+  $("#agenda").innerHTML=keys.map(k=>{
+    const d=noon(k);const rel=relLabel(k,now);
+    const items=groups[k].sort((a,b)=>startOf(a)-startOf(b)).map(ev=>{
+      const t=TYPES[ev.type];let time,extra="";
+      if(ev.allDay){time=ev.allDay.s===ev.allDay.e?"Tutto il giorno":`${fmtShort(ev.allDay.s)} – ${fmtShort(ev.allDay.e)}`;
+        if(ev.allDay.s<=fmtDayKey(now))extra=`<span class="tag live">In corso</span>`}
+      else{const n=nextSession(ev,now);const s=new Date(n.s),e=new Date(n.e);time=`${fmtTime(s)}<small>fino alle ${fmtTime(e)}</small>`;
+        if(s<=now)extra=`<span class="tag live">In diretta ora</span>`;
+        if(ev.sessions.length>1){const left=ev.sessions.filter(x=>new Date(x.e)>now).length;extra+=`<span class="tag">${left} incontri restanti</span>`}}
+      return `<button class="card" type="button" data-id="${ev.id}" style="--c:var(${t.c})">
+        <div class="time">${time}</div>
+        <div class="body"><p class="ttl">${esc(ev.title)}</p><p class="sub">${esc(ev.org)} · ${esc(ev.place)}</p>
+          <div class="tags"><span class="tag type">${t.label}</span><span class="tag">${esc(ev.cat)}</span><span class="tag cost ${ev.cost}">${esc(ev.costLabel)}</span>${extra}</div></div>
+        <span class="add">+ Calendario</span></button>`}).join("");
+    return `<section class="day"><div class="dayhead"><div class="dn">${d.getUTCDate()}</div><div class="dw">${new Intl.DateTimeFormat("it-IT",{weekday:"short",month:"short",timeZone:"UTC"}).format(d)}</div>${rel?`<span class="rel">${rel}</span>`:""}</div><div class="list">${items}</div></section>`;
+  }).join("");
+}
+
+$("#agenda").addEventListener("click",e=>{const c=e.target.closest(".card");if(c)openPanel(c.dataset.id)});
+let lastFocus=null;
+function openPanel(id){
+  const ev=EVENTS.find(x=>x.id===id),now=new Date(),t=TYPES[ev.type];lastFocus=document.activeElement;
+  let sess;
+  if(ev.allDay){const l=calLinks(ev);
+    sess=`<div class="sess"><div class="when">${ev.allDay.s===ev.allDay.e?fmtLong(noon(ev.allDay.s)):`dal ${fmtLong(noon(ev.allDay.s))} al ${fmtLong(noon(ev.allDay.e))}`}</div>
+      <div class="btns"><a class="btn primary" href="${l.google}" target="_blank" rel="noopener">Aggiungi a Google Calendar</a><a class="btn" href="${l.outlook}" target="_blank" rel="noopener">Outlook.com</a><a class="btn" href="${l.office}" target="_blank" rel="noopener">Outlook 365 (lavoro)</a><button class="btn" type="button" data-ics="${ev.id}">Scarica .ics</button></div></div>`}
+  else{const up=ev.sessions.filter(x=>new Date(x.e)>now);
+    sess=up.map((x,i)=>{const l=calLinks(ev,x),s=new Date(x.s),e=new Date(x.e);
+      return `<div class="sess"><div class="when">${up.length>1?`Incontro ${ev.sessions.indexOf(x)+1} · `:""}${fmtLong(s)}, ${fmtTime(s)}–${fmtTime(e)}</div>
+      <div class="btns"><a class="btn ${i===0?"primary":""}" href="${l.google}" target="_blank" rel="noopener">Aggiungi a Google Calendar</a><a class="btn" href="${l.outlook}" target="_blank" rel="noopener">Outlook.com</a><a class="btn" href="${l.office}" target="_blank" rel="noopener">Outlook 365 (lavoro)</a>${i===0?`<button class="btn" type="button" data-ics="${ev.id}">Scarica .ics (${up.length>1?"tutti gli incontri":"evento"})</button>`:""}</div></div>`}).join("")}
+  $("#panel").innerHTML=`<button class="close" type="button" id="pClose">Chiudi</button>
+    <div class="tags"><span class="tag type" style="--c:var(${t.c})">${t.label}</span><span class="tag">${esc(ev.cat)}</span></div>
+    <h2 id="pTitle">${esc(ev.title)}</h2>
+    <dl class="facts"><dt>Chi</dt><dd>${esc(ev.org)}</dd><dt>Dove</dt><dd>${esc(ev.place)}</dd><dt>Accesso</dt><dd>${ev.remote?"Seguibile da remoto":"Solo in presenza"}</dd><dt>Costo</dt><dd><span class="tag cost ${ev.cost}">${esc(ev.costLabel)}</span></dd></dl>
+    <p class="desc">${esc(ev.desc)}</p>
+    ${ev.note?`<p class="note">${esc(ev.note)}</p>`:""}
+    <div class="sessions">${sess}</div>
+    <a class="src" href="${ev.url}" target="_blank" rel="noopener">Pagina dell'organizzatore / fonte ↗</a>`;
+  $("#panel").hidden=false;$("#scrim").hidden=false;$("#pClose").focus();
+  $("#pClose").addEventListener("click",closePanel);
+}
+function closePanel(){$("#panel").hidden=true;$("#scrim").hidden=true;if(lastFocus)lastFocus.focus()}
+$("#scrim").addEventListener("click",closePanel);
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!$("#panel").hidden)closePanel()});
+
+
+// .ics (funziona sul tuo dominio: Apple Calendar, Outlook desktop, qualsiasi app)
+function icsFor(ev){
+  const stamp=z(new Date());const esc2=t=>String(t).replace(/\\/g,"\\\\").replace(/;/g,"\\;").replace(/,/g,"\\,").replace(/\n/g,"\\n");
+  const desc=esc2(`${ev.desc}\n\nOrganizzatore: ${ev.org}\nCosto: ${ev.costLabel}\nFonte: ${ev.url}`);
+  const items=ev.allDay?[`DTSTART;VALUE=DATE:${ev.allDay.s.replace(/-/g,"")}`+"\r\n"+`DTEND;VALUE=DATE:${addDays(ev.allDay.e,1).replace(/-/g,"")}`]
+    :ev.sessions.filter(x=>new Date(x.e)>new Date()).map(x=>`DTSTART:${z(new Date(x.s))}\r\nDTEND:${z(new Date(x.e))}`);
+  const vev=items.map((t,i)=>["BEGIN:VEVENT",`UID:${ev.id}-${i}@consulentia.net`,`DTSTAMP:${stamp}`,t,`SUMMARY:${esc2(ev.title)}`,`DESCRIPTION:${desc}`,`LOCATION:${esc2(ev.place)}`,`URL:${ev.url}`,"END:VEVENT"].join("\r\n"));
+  return ["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Consulentia//Palinsesto AI//IT","CALSCALE:GREGORIAN",...vev,"END:VCALENDAR"].join("\r\n");
+}
+document.addEventListener("click",e=>{const b=e.target.closest("[data-ics]");if(!b)return;const ev=EVENTS.find(x=>x.id===b.dataset.ics);
+  const blob=new Blob([icsFor(ev)],{type:"text/calendar;charset=utf-8"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=ev.id+".ics";document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),1000)});
+
+fetch("events.json",{cache:"no-cache"}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(d=>{
+  EVENTS=d.events.map(e=>({id:e.id,title:e.title,org:e.org,type:TYPES[e.type]?e.type:"webinar",cat:e.category,remote:!!e.remote,place:e.place,desc:e.description,note:e.note,url:e.url,
+    cost:e.cost||"unknown",costLabel:e.costLabel||"Costo non indicato",
+    allDay:e.allDay?{s:e.allDay.start,e:e.allDay.end}:null,sessions:e.sessions?e.sessions.map(x=>({s:x.start,e:x.end})):null}));
+  const found=[...new Set(EVENTS.map(e=>e.cat))];CATS=CAT_ORDER.filter(c=>found.includes(c)).concat(found.filter(c=>!CAT_ORDER.includes(c)));
+  const [y,m,dd]=d.updated.split("-");$("#updated").textContent=`${+dd} ${["gen","feb","mar","apr","mag","giu","lug","ago","set","ott","nov","dic"][m-1]} ${y}`;
+  buildChips();render();setInterval(render,60000);
+}).catch(()=>{$("#agenda").innerHTML='<p class="empty">Non riesco a caricare il palinsesto in questo momento. Ricarica la pagina tra qualche minuto.</p>'});
+</script>
+</body>
+</html>
