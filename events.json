@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18",
+ "updated": "2026-11-23",
  "timezone": "Europe/Rome",
  "events": [
   {
@@ -19,108 +19,6 @@
    },
    "note": "Iscrizioni chiuse il 14 ottobre. Utile da seguire per la prossima edizione.",
    "url": "https://sistemapenale.it/it/corso-di-perfezionamento/corso-di-perfezionamento-in-intelligenza-artificiale-giustizia-e-responsabilita-penale?out=print"
-  },
-  {
-   "id": "ailive",
-   "title": "Artificial Intelligence Live!",
-   "org": "Live! 360 · Orlando",
-   "type": "conf",
-   "category": "Sviluppo & ingegneria",
-   "remote": false,
-   "place": "Orlando, Florida",
-   "cost": "paid",
-   "costLabel": "A pagamento",
-   "description": "Laboratori pratici e sessioni tecniche su ricerca vettoriale, sicurezza dei modelli, architetture ad agenti e protocolli come MCP.",
-   "allDay": {
-    "start": "2026-11-15",
-    "end": "2026-11-20"
-   },
-   "url": "https://live360events.com/events/orlando-2026/ailive.aspx"
-  },
-  {
-   "id": "ignite",
-   "title": "Microsoft Ignite 2026",
-   "org": "Microsoft · San Francisco",
-   "type": "conf",
-   "category": "Agenti & automazione",
-   "remote": true,
-   "place": "Moscone Center, San Francisco · online gratis",
-   "cost": "mixed",
-   "costLabel": "Gratis online · a pagamento in presenza",
-   "description": "Conferenza Microsoft su AI, cloud e sicurezza: Copilot, agenti, Azure. Keynote di Satya Nadella. La partecipazione virtuale è gratuita.",
-   "allDay": {
-    "start": "2026-11-17",
-    "end": "2026-11-20"
-   },
-   "url": "https://www.uctoday.com/events/microsoft-ignite-2026/"
-  },
-  {
-   "id": "digital-italy-26",
-   "title": "Digital Italy Summit 2026 · AI, sovranità e nuovi confini",
-   "org": "The Innovation Group",
-   "type": "conf",
-   "category": "Business & strategia",
-   "remote": false,
-   "place": "Spazio Vittoria, Roma",
-   "cost": "unknown",
-   "costLabel": "Costo non indicato",
-   "description": "Due giornate su intelligenza artificiale, sovranità digitale e politiche per l'innovazione, con istituzioni e grandi aziende.",
-   "allDay": {
-    "start": "2026-11-18",
-    "end": "2026-11-19"
-   },
-   "url": "https://www.theinnovationgroup.it/events/digital-italy-summit-2026/"
-  },
-  {
-   "id": "fbk-capire",
-   "title": "CAPIRE · AI literacy per la Pubblica Amministrazione (2ª edizione)",
-   "org": "Fondazione Bruno Kessler",
-   "type": "online",
-   "category": "Regole, etica & sicurezza",
-   "remote": true,
-   "place": "Online (Google Meet)",
-   "cost": "free",
-   "costLabel": "Gratuito",
-   "description": "Corso base gratuito in italiano: come funziona l'AI, potenzialità e limiti, quadro dell'AI Act e workshop su casi d'uso della PA, con ricercatori FBK.",
-   "sessions": [
-    {
-     "start": "2026-11-24T14:30:00+01:00",
-     "end": "2026-11-24T15:30:00+01:00"
-    },
-    {
-     "start": "2026-11-26T14:30:00+01:00",
-     "end": "2026-11-26T15:30:00+01:00"
-    },
-    {
-     "start": "2026-12-01T14:30:00+01:00",
-     "end": "2026-12-01T15:30:00+01:00"
-    },
-    {
-     "start": "2026-12-03T14:30:00+01:00",
-     "end": "2026-12-03T15:30:00+01:00"
-    }
-   ],
-   "note": "Le lezioni non vengono registrate; l'attestato richiede almeno 6 lezioni su 8. L'edizione si assegna per sorteggio.",
-   "url": "https://www.fbk.eu/wp-content/uploads/2026/08/Locandina_CAPIRE_2026_calendario-rev.pdf"
-  },
-  {
-   "id": "mindstone-mi-nov",
-   "title": "Mindstone AI Meetup Milano: ButterflAI Effect",
-   "org": "Mindstone Milan",
-   "type": "conf",
-   "category": "AI generativa & prompt",
-   "remote": false,
-   "place": "Talent Garden Calabiana, via Arcivescovo Calabiana 6, Milano",
-   "cost": "unknown",
-   "costLabel": "Costo non indicato",
-   "description": "Serata della community Mindstone con casi pratici di uso dell'AI generativa nel lavoro quotidiano.",
-   "sessions": [
-    {
-     "start": "2026-11-19T18:30:00+01:00",
-     "end": "2026-11-19T20:30:00+01:00"
-    }
-   ],
-   "url": "https://www.eventbrite.com/e/biglietti-mindstone-ai-meetup-milan-butterflai-effect-2003712968427"
   },
   {
    "id": "mlcon",
@@ -160,6 +58,26 @@
    "url": "https://www.fondazionecdlmilano.it/intelligenza-artificiale-sicurezza-lavoro-seminario-milano-23-novembre-2026/"
   },
   {
+   "id": "assolombarda-ai-competitivita",
+   "title": "AI, impresa e competitività: strategie europee per la nuova trasformazione industriale",
+   "org": "Assolombarda · con A2A",
+   "type": "conf",
+   "category": "Business & strategia",
+   "remote": false,
+   "place": "Auditorium Giorgio Squinzi, Assolombarda, via Pantano 9, Milano",
+   "cost": "free",
+   "costLabel": "Gratuito",
+   "description": "Convegno con istituzioni europee, ricerca e grandi imprese su come l'AI cambia i modelli industriali e la competitività, con tavola rotonda finale.",
+   "sessions": [
+    {
+     "start": "2026-11-23T10:30:00+01:00",
+     "end": "2026-11-23T12:30:00+01:00"
+    }
+   ],
+   "note": "Segue light lunch. Iscrizione dalla pagina Assolombarda.",
+   "url": "https://www.assolombarda.it/servizi/assolombarda-e-confindustria/appuntamenti/ai-impresa-e-competitivita-strategie-europee-per-la-nuova-trasformazione-industriale"
+  },
+  {
    "id": "aisummit-eu",
    "title": "AI Summit Europe 2026",
    "org": "Vilnius · con Big Data Conference Europe",
@@ -175,6 +93,38 @@
     "end": "2026-11-27"
    },
    "url": "https://neuronfeed.com/conferences?topic=AI"
+  },
+  {
+   "id": "fbk-capire",
+   "title": "CAPIRE · AI literacy per la Pubblica Amministrazione (2ª edizione)",
+   "org": "Fondazione Bruno Kessler",
+   "type": "online",
+   "category": "Regole, etica & sicurezza",
+   "remote": true,
+   "place": "Online (Google Meet)",
+   "cost": "free",
+   "costLabel": "Gratuito",
+   "description": "Corso base gratuito in italiano: come funziona l'AI, potenzialità e limiti, quadro dell'AI Act e workshop su casi d'uso della PA, con ricercatori FBK.",
+   "sessions": [
+    {
+     "start": "2026-11-24T14:30:00+01:00",
+     "end": "2026-11-24T15:30:00+01:00"
+    },
+    {
+     "start": "2026-11-26T14:30:00+01:00",
+     "end": "2026-11-26T15:30:00+01:00"
+    },
+    {
+     "start": "2026-12-01T14:30:00+01:00",
+     "end": "2026-12-01T15:30:00+01:00"
+    },
+    {
+     "start": "2026-12-03T14:30:00+01:00",
+     "end": "2026-12-03T15:30:00+01:00"
+    }
+   ],
+   "note": "Le lezioni non vengono registrate; l'attestato richiede almeno 6 lezioni su 8. L'edizione si assegna per sorteggio.",
+   "url": "https://www.fbk.eu/wp-content/uploads/2026/08/Locandina_CAPIRE_2026_calendario-rev.pdf"
   },
   {
    "id": "emilia-genai",
@@ -334,6 +284,25 @@
    "url": "https://blog.ai4.io/?p=16828"
   },
   {
+   "id": "osservatori-startup-ai",
+   "title": "Startup & AI Thinking: l'Open Innovation cambia pelle",
+   "org": "Osservatori Digital Innovation · Politecnico di Milano",
+   "type": "conf",
+   "category": "Business & strategia",
+   "remote": true,
+   "place": "Aula de Carli, via Durando 10, Milano · anche in streaming",
+   "cost": "free",
+   "costLabel": "Gratuito",
+   "description": "Convegno di presentazione della ricerca dell'Osservatorio: investimenti digitali per il 2027 e il peso dell'AI nei modelli di business e nell'open innovation.",
+   "sessions": [
+    {
+     "start": "2026-12-01T09:30:00+01:00",
+     "end": "2026-12-01T13:30:00+01:00"
+    }
+   ],
+   "url": "https://www.osservatori.net/convegno/startup-thinking/convegno-osservatorio-startup-thinking/"
+  },
+  {
    "id": "padova-dati",
    "title": "Dati alla mano: AI, automazione e analisi dei dati per l'impresa",
    "org": "Punto Impresa Digitale · Camera di Commercio di Padova",
@@ -396,6 +365,66 @@
    "url": "https://mmaglobal.com/pt-br/webinars/ai-marketers-what-took-hold-2026-and-what-build-toward-2027"
   },
   {
+   "id": "osservatori-cx",
+   "title": "La sfida strategica della Customer Experience: oltre l'AI ready-to-use",
+   "org": "Osservatori Digital Innovation · Politecnico di Milano",
+   "type": "conf",
+   "category": "Marketing & comunicazione",
+   "remote": true,
+   "place": "Aula de Carli, Milano · mattina anche in streaming",
+   "cost": "free",
+   "costLabel": "Gratuito",
+   "description": "Risultati dell'Osservatorio Omnichannel Customer Experience: maturità omnicanale delle aziende, AI agentica e AI nel servizio clienti.",
+   "sessions": [
+    {
+     "start": "2026-12-03T09:30:00+01:00",
+     "end": "2026-12-03T17:30:00+01:00"
+    }
+   ],
+   "note": "Chi segue da remoto ha la diretta fino alle 12:30.",
+   "url": "https://www.osservatori.net/convegno/omnichannel-customer-experience/omnichannel-customer-experience-convegno-osservatorio/"
+  },
+  {
+   "id": "federpubblicita-aiact",
+   "title": "Pubblicità e intelligenza artificiale: gli obblighi di trasparenza dell'AI Act",
+   "org": "Federpubblicità Confesercenti",
+   "type": "webinar",
+   "category": "Regole, etica & sicurezza",
+   "remote": true,
+   "place": "Online (Zoom)",
+   "cost": "free",
+   "costLabel": "Gratuito",
+   "description": "Webinar per agenzie, professionisti e imprese della pubblicità sugli obblighi di trasparenza previsti dall'art. 50 dell'AI Act per i contenuti generati con l'AI.",
+   "sessions": [
+    {
+     "start": "2026-12-03T14:30:00+01:00",
+     "end": "2026-12-03T16:00:00+01:00"
+    }
+   ],
+   "note": "Annuncio pubblicato da Confesercenti Genova; link di iscrizione nell'articolo.",
+   "url": "https://genova.confesercenti.it/2026/11/15/federpubblicita-il-3-dicembre-un-webinar-gratuito-su-pubblicita-e-intelligenza-artificiale/"
+  },
+  {
+   "id": "t2i-bootcamp-ai",
+   "title": "Bootcamp · L'AI che serve davvero: dove applicarla e come creare valore",
+   "org": "t2i · con SheTech",
+   "type": "presenza",
+   "category": "Agenti & automazione",
+   "remote": false,
+   "place": "t2i, piazza delle Istituzioni 34/a, Treviso",
+   "cost": "free",
+   "costLabel": "Gratuito",
+   "description": "Pomeriggio intensivo di quattro ore su quali strumenti AI usare, contenuti, automazione dei processi con agenti, dati e governance.",
+   "sessions": [
+    {
+     "start": "2026-12-03T15:00:00+01:00",
+     "end": "2026-12-03T19:00:00+01:00"
+    }
+   ],
+   "note": "Posti limitati alla capienza della sala.",
+   "url": "https://www.t2i.it/cat-formazione/bootcamp-lai-che-serve-davvero-dove-applicarla-e-come-creare-valore-3-dicembre/"
+  },
+  {
    "id": "neurips",
    "title": "NeurIPS 2026",
    "org": "Conference on Neural Information Processing Systems",
@@ -428,6 +457,24 @@
     "end": "2026-12-10"
    },
    "url": "https://neuronfeed.com/conferences?topic=AI"
+  },
+  {
+   "id": "aisummit-ny",
+   "title": "The AI Summit New York 2026",
+   "org": "Informa · Javits Center, New York",
+   "type": "conf",
+   "category": "Business & strategia",
+   "remote": false,
+   "place": "Javits Center, New York",
+   "cost": "paid",
+   "costLabel": "A pagamento · Expo Pass da $55",
+   "description": "Grande fiera-conferenza sull'AI applicata alle aziende, con keynote, sessioni di settore ed esposizione. Solo in presenza; registrazioni on demand dopo l'evento.",
+   "allDay": {
+    "start": "2026-12-09",
+    "end": "2026-12-10"
+   },
+   "note": "Orari delle giornate non pubblicati nella FAQ; prezzi dei pass principali non ancora indicati.",
+   "url": "https://newyork.theaisummit.com/about/faqs/"
   },
   {
    "id": "ana-accel",
@@ -470,6 +517,26 @@
    "url": "https://torino.ordingegneri.it/blog/2026/11/18/machine-learning-e-intelligenza-artificiale-nelle-misure-acustiche-riconoscimento-separazione-e-classificazione-delle-sorgenti-10-dicembre-2026/"
   },
   {
+   "id": "assolombarda-next-eng",
+   "title": "Next Engineering: tecnologie e AI per l'economia circolare con Simbiosi",
+   "org": "Assolombarda · Gruppo Engineering Services",
+   "type": "conf",
+   "category": "AI nei settori",
+   "remote": false,
+   "place": "Assolombarda, via Pantano 9, Milano",
+   "cost": "unknown",
+   "costLabel": "Costo non indicato",
+   "description": "Ultimo incontro del ciclo Next Engineering: come tecnologie digitali e AI abilitano nuovi modelli di economia circolare.",
+   "sessions": [
+    {
+     "start": "2026-12-15T10:00:00+01:00",
+     "end": "2026-12-15T11:30:00+01:00"
+    }
+   ],
+   "note": "Data e orario letti dal calendario forgIA di Assolombarda; la pagina dell'evento non è stata aperta.",
+   "url": "https://www.assolombarda.it/governance/sezioni/engineering-services/appuntamenti/next-engineering-tecnologie-ai-ed-economia-circolare-nell2019ultimo-appuntamento-del-ciclo"
+  },
+  {
    "id": "torino-ama",
    "title": "Ask Me Anything: AI in azienda",
    "org": "Punto Impresa Digitale · Camera di Commercio di Torino · Torino Digital Days",
@@ -488,6 +555,26 @@
    ],
    "note": "Le domande si possono inviare in anticipo con il modulo indicato sulla pagina.",
    "url": "https://www.to.camcom.it/ask-me-ai-in-azienda-15-dicembre"
+  },
+  {
+   "id": "sios26-winter",
+   "title": "SIOS26 Winter · AI for Real",
+   "org": "StartupItalia · con Assolombarda",
+   "type": "conf",
+   "category": "Business & strategia",
+   "remote": false,
+   "place": "Palazzo Mezzanotte, Milano",
+   "cost": "unknown",
+   "costLabel": "Costo non indicato",
+   "description": "Giornata su applicazioni concrete dell'AI in impresa, startup e investimenti, con keynote, workshop, demo e la finale di Startup of the Year.",
+   "sessions": [
+    {
+     "start": "2026-12-16T09:00:00+01:00",
+     "end": "2026-12-16T18:00:00+01:00"
+    }
+   ],
+   "note": "Biglietti su Eventbrite (non verificati); orario indicato nel link Eventbrite della pagina Assolombarda.",
+   "url": "https://www.assolombarda.it/servizi/startup/informazioni/sios26-winter-torna-a-milano-il-16-dicembre"
   },
   {
    "id": "ces-2027",
